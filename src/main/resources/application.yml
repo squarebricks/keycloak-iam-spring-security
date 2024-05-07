@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: keycloak-iam-spring-security
+  profiles:
+    active:
+      - local
+
+logging:
+  level:
+    graphql: TRACE
+    org:
+      springframework:
+        security: DEBUG
+        graphql: TRACE
+      hibernate:
+        #        stat: DEBUG
+        #        SQL: DEBUG
+        #        type.descriptor.sql: TRACE
+        orm.jdbc.bind: TRACE
